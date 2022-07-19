@@ -1,0 +1,226 @@
+/* import google font  */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+body{
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+/* common utilites */
+
+/* Top banner styles */
+.top-section{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin: 20px 5%;
+    display: flex;
+    
+}
+.top-details{
+    width: 50%;
+    padding:50px; 
+    margin-right: 100px;
+}
+.top-details h1{
+    margin-top: 20px;
+    font-size: 70px;
+    line-height: 80px;
+}
+.top-details p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.top-details button{
+    background-color: #DD0000;
+    color: #FFFFFF;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+.top-image{
+    padding-top: 20px;
+}
+.top-image img{
+    width: 100%;
+    height: 100%;
+}
+
+/* grid section styles */
+.grid-container{
+    margin: 100px 5%;
+    display: flex;
+   
+}
+.link-section{
+    width: 312px;
+    height: 312px;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+.link-section a{
+    text-decoration: none;
+    background-color: #FFFFFF;
+    color: black;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.blog{
+    border: 2px solid rgb(232, 230, 230);
+    border-radius: 10px;
+}
+.blog img{
+    width: 100%;
+}
+.blog-details{
+    margin: 20px;
+}
+.blog-details a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+.blog-details span{
+    margin-right: 50px;
+    color: gray;
+    font-weight: 300;
+}
+.see-more button{
+    background-color: #DD0000;
+    color: #FFFFFF;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 0;
+    text-align: center;
+    display: none;
+}
+/* footer styles  */
+footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+hr{
+    width: 60%;
+    margin: 0 auto;
+}
+.footer-links{
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer-links a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 10px;
+    margin-right: 50px;
+    color: gray;
+}
+
+/* responsive styles  */
+/* lablets styles */
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .grid-container{
+        display: block;
+    }
+    .link-section{
+        background-color:#FFFFFF ;
+        width: 70%;
+        height: 90px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .tablet-hide{
+        display: none;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-flow: dense;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    .see-more{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .see-more button{
+        display: block;
+    }
+}
+
+/* mobile styles  */
+ @media only screen and (max-width:688px) {
+    body{
+        width: 100%;
+        margin: 0;
+    }
+    .top-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-details{
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-container{
+        display: block;
+    }
+
+    .link-section{
+        background-color:#FFFFFF ;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-flow: dense;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .footer-links a{
+        margin-bottom: 30px;
+    }
+    
+}
+
+    
