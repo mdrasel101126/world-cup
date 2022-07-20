@@ -79,9 +79,10 @@ body{
     color: black;
     width: 200px;
     text-align: center;
+    border: 2px solid rgb(218, 189, 189);
     border-radius: 10px;
-    padding: 10px 20px;
-    margin-bottom: 20px;
+    padding: 10px;
+    margin: 20px 10px;
 }
 /* matches styles */
 .matches{
@@ -142,7 +143,8 @@ hr{
     text-decoration: none;
     color: #FFFFFF;
     font-size: 10px;
-    margin-right: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
     color: gray;
 }
 
@@ -154,7 +156,7 @@ hr{
     }
     .link-section{
         background-color:#FFFFFF ;
-        width: 70%;
+        width: 95%;
         height: 90px;
         margin: 0 auto;
         display: flex;
@@ -200,6 +202,7 @@ hr{
     .top-details h1{
         font-size: 30px;
     }
+
     .grid-container{
         display: block;
     }
